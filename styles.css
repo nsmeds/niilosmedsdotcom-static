@@ -51,13 +51,19 @@ h1 {
   margin-bottom: 0.3em;
 }
 
-h4 {
-    text-transform: uppercase;
-}
-
 p {
   margin: 0;
   font-size: 0.8em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.8;
+}
+
+a:hover {
+    opacity: 1;
 }
 
 #main {
@@ -75,6 +81,10 @@ p {
 
 #bandcamp-container {
   text-align: center;
+}
+
+#album {
+    padding-bottom: 1em;
 }
 
 .tracklist,
@@ -113,7 +123,15 @@ p {
   width: 75px;
 }
 
-@media screen and (max-width: 800px) {
+.logo a {
+    opacity: 1;
+}
+
+.logo a:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1020px) {
 
   body {
     background-size: auto;
@@ -121,7 +139,7 @@ p {
 
   .tracklist,
   #liners-container {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   #liners-container {
@@ -134,7 +152,7 @@ p {
   }
 
   .logo img {
-    width: 50px;
+    width: 65px;
   }
 
 }
